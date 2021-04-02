@@ -265,9 +265,23 @@ li {
 .header-nav:hover,
 .header-nav:focus {
     color: var(--accent-color);
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.header-nav::after {
+    content: "";
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+    color: var(--accent-color);
+    margin-top: 28px;
+    width: 100%;
+    display: block;
+}
+.site-nav .header-nav::after {
+    color: var(--accent-color);
+}
+
 .main-button {
     font-family: Roboto;
     font-style: normal;
