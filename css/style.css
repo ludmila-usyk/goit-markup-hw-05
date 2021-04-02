@@ -110,6 +110,8 @@ li {
 .mail-tell:hover .icon-mail-tell,
 .mail-tell:focus .icon-mail-tell {
     fill:var(--accent-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-mail-tell {
     fill: var(--border-color);
@@ -245,6 +247,8 @@ li {
 .mail-tell:hover,
 .mail-tell:focus {
     color: var(--accent-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-nav {
     font-style: normal;
@@ -261,6 +265,8 @@ li {
 .header-nav:hover,
 .header-nav:focus {
     color: var(--accent-color);
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .main-button {
     font-family: Roboto;
@@ -293,6 +299,7 @@ li {
     letter-spacing: 0.03em;
     color: var(--black-color);
 }
+
 .button-gallery .button-gallery-item:hover,
 .button-gallery .button-gallery-item:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
@@ -311,6 +318,8 @@ li {
 }
 .list {
     display: block;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-gallery:not(:last-child) {
@@ -325,6 +334,8 @@ li {
     border-radius: 4px;
     padding: 6px 22px 6px 22px;
     background-color: var(--button-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-all {
     background-color: var(--accent-color);
@@ -333,6 +344,8 @@ li {
     0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .occupation-part {
     background-color: var(--button-color);
@@ -380,6 +393,8 @@ fill: var(--border-color);
     justify-content: center;
     width: 44px;
     height: 44px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icons-link:hover,
@@ -403,6 +418,7 @@ fill: var(--border-color);
     font-style: normal;
     font-weight: 500;
     display: flex;
+    
 }
 .site-nav-item::before {
     content: "";
@@ -412,6 +428,7 @@ fill: var(--border-color);
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--white-color);
+    
 }
 
 .contact {
@@ -546,6 +563,8 @@ img {
 .customers-list:hover,
 .customers-list:focus {
     border-color: var(--accent-color);
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers {
@@ -578,9 +597,11 @@ img {
 
 .icon-client:hover .icon,
 .icon-client:focus .icon {
-        background-color: var(--white-color);
-        cursor: pointer;
-        fill: var(--accent-color);
+    background-color: var(--white-color);
+    cursor: pointer;
+    fill: var(--accent-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social {
