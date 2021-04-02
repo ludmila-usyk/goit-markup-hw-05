@@ -494,6 +494,27 @@ flex-wrap: wrap;
 .team-item .team-item-occupation:not(:last-child) {
     margin-right: 30px;
 }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.team-item-occupation {
+    position: relative;
+}
+.label {
+    position: absolute;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    bottom: 0;
+    color: var(--white-color);
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background-color: rgba(47, 48, 58, 0.8);
+}
 
 .team-item-grid {    
     box-shadow:  
