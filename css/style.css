@@ -508,6 +508,7 @@ fill: var(--border-color);
 }
 .thumb {
     position: relative;
+    overflow: hidden;
 }
 .thumb:hover::before {
     opacity: 1;
@@ -515,8 +516,17 @@ fill: var(--border-color);
 }
 
 .text-overlay {
-    color: red;
-    padding: 63px, 24px, 63px, 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 3%;
+    text-align: left;
+    padding: 63px 24px;
+    color: var(--white-color);
 }
 
 .team-item-list:nth-child(3n) {
