@@ -554,15 +554,13 @@ img {
 }
 .team-item-occupation {
     position: relative;
-    /* display: flex; */
 }
 .label {
     position: absolute;
     font-size: 14px;
-    letter-spacing: 3%; 
-    font-style: bold;
+    letter-spacing: 3%;
+    font-weight: 700;
     line-height: 1.14;
-    /* text-align: center; */
     text-transform: uppercase;
     width: 100%;
     bottom: 0;
