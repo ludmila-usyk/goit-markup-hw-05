@@ -527,6 +527,11 @@ fill: var(--border-color);
     text-align: left;
     padding: 63px 24px;
     color: var(--white-color);
+    opacity: 0;
+}
+.list .text-overlay:hover,
+.list .text-overlay:focus {
+    opacity: 0.9;
 }
 
 .team-item-list:nth-child(3n) {
