@@ -123,7 +123,7 @@ li {
     display: inline-flex;
 }
 .team-new {
-    padding-top: 30px;
+    padding: 30px;
 }
 
 .hero-team {
@@ -233,6 +233,12 @@ li {
     padding-top: 32px;
     padding-bottom: 32px;
 }
+.header-nav:hover,
+.header-nav:focus {
+    color: var(--accent-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .footer-bottom {
     margin-bottom: 9px;
@@ -292,6 +298,7 @@ li {
     display: flex;
     margin-right: auto;
     margin-left: auto;
+    
 }
 .backdrop {
     position: fixed;
@@ -300,10 +307,15 @@ li {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
     position: absolute;
@@ -317,6 +329,7 @@ li {
     background-color: var(--white-color);
     padding-top: 8px;
     padding-right: 8px;
+    
 }
 .modal-btn {
     height: 30px;
@@ -324,6 +337,7 @@ li {
     border-radius: 50%;
     border-color: rgba(0, 0, 0, 0.1);
     background-color: rgba(255, 255, 255, 1);
+    
 }
 
 .header {
@@ -346,13 +360,16 @@ li {
     border-radius: 4px;
     background-color: var(--accent-color);
     color: var(--white-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-item-list .list:hover,
 .team-item-list .list:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-    /* outline: none; */
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list {
     display: block;
@@ -415,6 +432,8 @@ fill: var(--border-color);
 .social-icons-link:hover .icon,
 .social-icons-link:focus .icon {
     fill: var(--white-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .text .icon {
@@ -440,18 +459,23 @@ fill: var(--border-color);
     background-color: var(--accent-color);
     fill: var(--white-color);
     border-radius: 50%;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icons {
-    margin-top: 16px;
-    margin-bottom: 30px;
-    margin-left: 32px;
-    margin-right: 32px;
     display: inline-flex;
 }
 
 .site-nav {
     display: flex;
+}
+.site-nav a:hover,
+.site-nav a:focus {
+    color: var(--accent-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .site-nav-item {
@@ -469,7 +493,9 @@ fill: var(--border-color);
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--white-color);
-    
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        
 }
 
 .contact {
@@ -546,6 +572,8 @@ fill: var(--border-color);
 .thumb:hover::before {
     opacity: 1;
     transform: translateZ(0);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .text-overlay {
@@ -556,7 +584,7 @@ fill: var(--border-color);
     font-family: 'Roboto';
     font-size: 18px;
     line-height: 1.56;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
     text-align: left;
     padding: 63px 24px;
     color: var(--white-color);
@@ -565,6 +593,8 @@ fill: var(--border-color);
 .list .text-overlay:hover,
 .list .text-overlay:focus {
     opacity: 0.9;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-item-list:nth-child(3n) {
@@ -606,7 +636,7 @@ img {
 .label {
     position: absolute;
     font-size: 14px;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
@@ -651,8 +681,8 @@ img {
 .customers-list:hover,
 .customers-list:focus {
     border-color: var(--accent-color);
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers {
@@ -663,6 +693,8 @@ img {
 .customers-list:hover .icon,
 .customers-list:focus .icon {
     fill: var(--button-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .gallery {
@@ -688,7 +720,8 @@ img {
     background-color: var(--white-color);
     cursor: pointer;
     fill: var(--accent-color);
-    transition-duration: 250ms;
+    transition-duration: 5250ms;
+
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -699,6 +732,7 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--white-color);
+    margin-bottom: 20px;
 }
 .footer .mail-tell {
     display: list-item;
