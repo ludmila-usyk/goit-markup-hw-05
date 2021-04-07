@@ -460,6 +460,10 @@ fill: var(--border-color);
     /* transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
+.team-item-list .link:hover .item-overlay,
+.team-item-list .link:focus .item-overlay {
+    transform: translateY(0);
+}
 
 .social-icons {
     display: inline-flex;
