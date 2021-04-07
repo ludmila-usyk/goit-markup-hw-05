@@ -53,7 +53,7 @@ a {
 
 button:hover {
     background-color: var(--accent-color);
-cursor: pointer;
+    cursor: pointer;
     color: var(--button-color);
 }
 .hero {
@@ -110,17 +110,21 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .mail-tell:hover .icon-mail-tell,
 .mail-tell:focus .icon-mail-tell {
     fill:var(--accent-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-mail-tell {
     fill: var(--border-color);
     margin-right: 10px;
     display: inline-flex;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .team-new {
     padding: 30px;
@@ -236,8 +240,6 @@ li {
 .header-nav:hover,
 .header-nav:focus {
     color: var(--accent-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-bottom {
@@ -247,8 +249,6 @@ li {
 .mail-tell:hover,
 .mail-tell:focus {
     color: var(--accent-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-nav {
     font-style: normal;
@@ -258,9 +258,12 @@ li {
     letter-spacing: 0.02em;
     color: var(--black-color);
     font-family: Roboto;
-    padding-top: 32px;
+    /* padding-top: 32px; */
     /* padding-bottom: 32px; */
     display: block;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .current:hover,
 .current:focus {
@@ -360,17 +363,14 @@ li {
     border-radius: 4px;
     background-color: var(--accent-color);
     color: var(--white-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-item-list .list:hover,
 .team-item-list .list:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-    0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 4px 4px rgba(117, 73, 73, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .list {
     display: block;
     transition-duration: 250ms;
@@ -432,8 +432,6 @@ fill: var(--border-color);
 .social-icons-link:hover .icon,
 .social-icons-link:focus .icon {
     fill: var(--white-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .text .icon {
@@ -469,13 +467,13 @@ fill: var(--border-color);
 
 .site-nav {
     display: flex;
+    padding-top: 32px;
 }
 .site-nav a:hover,
 .site-nav a:focus {
     color: var(--accent-color);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .site-nav-item {
@@ -589,12 +587,13 @@ fill: var(--border-color);
     padding: 63px 24px;
     color: var(--white-color);
     opacity: 0;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .list .text-overlay:hover,
 .list .text-overlay:focus {
     opacity: 0.9;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-item-list:nth-child(3n) {
@@ -677,12 +676,13 @@ img {
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
     border-radius: 4px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .customers-list:hover,
 .customers-list:focus {
     border-color: var(--accent-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers {
@@ -693,8 +693,6 @@ img {
 .customers-list:hover .icon,
 .customers-list:focus .icon {
     fill: var(--button-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .gallery {
@@ -713,6 +711,8 @@ img {
     fill: var(--border-color);
     align-items: center;
     justify-content: center;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-client:hover .icon,
@@ -720,9 +720,8 @@ img {
     background-color: var(--white-color);
     cursor: pointer;
     fill: var(--accent-color);
-    transition-duration: 5250ms;
-
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition-duration: 5250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .footer-social {
