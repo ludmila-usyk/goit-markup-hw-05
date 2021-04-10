@@ -264,7 +264,7 @@ li {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.current::after {
+a.current::after {
     content: "";
     height: 4px;
     border-radius: 2px;
@@ -558,8 +558,8 @@ fill: var(--border-color);
 }
 /* .thumb {
     position: relative;
-    overflow: hidden; */
-}
+    overflow: hidden; 
+}*/
 /* .thumb:hover {
     opacity: 1;
     transform: translateZ(0);
