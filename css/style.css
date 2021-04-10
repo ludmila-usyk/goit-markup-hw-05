@@ -45,11 +45,13 @@ a {
     padding-top: 60px;
     padding-bottom: 60px;
 }
-.test {
+.footer-web {
     display: flex;
     align-items: baseline;
 }
-
+.footer-input {
+    display: flex;
+}
 
 button:hover {
     background-color: var(--accent-color);
@@ -69,6 +71,7 @@ button:hover {
         url(../images-01/bg-i.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
+
 }
 
 .logo {
@@ -242,10 +245,6 @@ li {
     color: var(--accent-color);
 }
 
-.footer-bottom {
-    margin-bottom: 9px;
-}
-
 .mail-tell:hover,
 .mail-tell:focus {
     color: var(--accent-color);
@@ -258,19 +257,13 @@ li {
     letter-spacing: 0.02em;
     color: var(--black-color);
     font-family: Roboto;
-    /* padding-top: 32px; */
-    /* padding-bottom: 32px; */
     display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-}
-.current:hover,
-.current:focus {
-    color: var(--accent-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 .current::after {
     content: "";
     height: 4px;
@@ -301,7 +294,6 @@ li {
     display: flex;
     margin-right: auto;
     margin-left: auto;
-
 }
 .backdrop {
     position: fixed;
@@ -459,8 +451,6 @@ fill: var(--border-color);
     background-color: var(--accent-color);
     fill: var(--white-color);
     border-radius: 50%;
-    /* transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .team-item-list .link:hover .item-overlay,
 .team-item-list .link:focus .item-overlay {
@@ -478,8 +468,6 @@ fill: var(--border-color);
 .site-nav a:hover,
 .site-nav a:focus {
     color: var(--accent-color);
-    /* transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .site-nav-item {
@@ -487,7 +475,7 @@ fill: var(--border-color);
     font-style: normal;
     font-weight: 500;
     display: flex;
-    
+    position: relative;
 }
 /* .site-nav-item::before {
     content: "";
@@ -553,7 +541,7 @@ fill: var(--border-color);
     box-sizing: border-box;
     background: var(--white-color);
 }
-.thumb::before {
+.thumb {
     display: inline-block;
     position: absolute;
     content: "";
@@ -568,16 +556,16 @@ fill: var(--border-color);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.thumb {
+/* .thumb {
     position: relative;
-    overflow: hidden;
+    overflow: hidden; */
 }
-.thumb:hover::before {
+/* .thumb:hover {
     opacity: 1;
     transform: translateZ(0);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 .text-overlay {
     position: absolute;
@@ -593,6 +581,7 @@ fill: var(--border-color);
     color: var(--white-color);
     opacity: 0;
 }
+
 .list .text-overlay:hover,
 .list .text-overlay:focus {
     opacity: 0.9;
@@ -726,6 +715,15 @@ img {
     cursor: pointer;
     fill: var(--accent-color);
 }
+.input{
+margin-left: 93px;
+stroke: solid rgba(255, 255, 255, 0.3);
+}
+.send {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+}
 
 .footer-social {
     font-weight: bold;
@@ -739,6 +737,38 @@ img {
 .footer .mail-tell {
     display: list-item;
 }
+.footer-button {
+    padding: 10px 28px 10px 29px;
+    margin-bottom: 9px;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    line-height: 1.14;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.text-button{
+   vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .address-part {
     margin-right: 70px;
+}
+.input-field {
+    margin-right: 12px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+    /* padding: 15px; */
+    width: 358px;
+    font-size: 16px;
+    line-height: 1.25;
+    background-color: transparent;
+    color: var(--white-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
 }
