@@ -264,7 +264,7 @@ li {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-a.current::after {
+.current::after {
     content: "";
     height: 4px;
     border-radius: 2px;
@@ -544,7 +544,8 @@ fill: var(--border-color);
     position: relative;
     overflow: hidden; 
 }
-a:hover .item-overlay {
+a:hover .item-overlay,
+a:focus .item-overlay {
     transform: translatex(0);
 }
 
