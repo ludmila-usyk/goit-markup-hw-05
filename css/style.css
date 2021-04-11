@@ -473,17 +473,6 @@ fill: var(--border-color);
     display: flex;
     position: relative;
 }
-/* .site-nav-item::before {
-    content: "";
-    display: block;
-    height: 16px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: var(--white-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-} */
 
 .contact {
     display: flex;
@@ -588,8 +577,8 @@ a:hover .item-overlay {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-a .text-overlay:hover,
-a .text-overlay:focus {
+.list:hover .text-overlay,
+.list:focus .text-overlay {
     opacity: 0.9;
 }
 
